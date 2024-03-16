@@ -1,0 +1,103 @@
+body {
+    width: 100vw;
+    height: 100vh;
+    margin: 0;
+    padding: 0;
+    color: rgb(197, 222, 192);
+    background-color: black;
+    overflow: hidden;
+    background-image: url("./3.jpg");
+    background-size: contain;
+    background-position: center;
+    background-repeat: no-repeat;
+}
+.container {
+    height: 100vh;
+    width: 20vw;
+    margin-top: 30vh;
+    margin-left: 15vw;
+    display: flex;
+    flex-direction: column;
+    /* justify-content: center; */
+    align-items: center;
+    gap: 3vh;
+}
+header {
+    height: 10vh;
+    width: 100vw;
+    padding-left: 2vw;
+    background-color: rgba(57, 75, 64, 0.061);
+    gap: 7vw;
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+}
+
+.input_field {
+    width: 25vw;
+    height: 8vh;
+    border-radius: 12px;
+    border: none;
+    background-color: rgba(77, 78, 75, 0.573);
+    color: whitesmoke;
+    font-size: 20px;
+    padding-left: 12px;
+}
+.input_field:hover,
+.input_field:focus {
+    border: none;
+}
+
+.about,
+.how {
+    padding: 10px 20px;
+    transition: background-color 0.3s;
+    display: inline-block;
+    text-decoration: none;
+}
+.home:hover,
+.about:hover {
+    color: rgba(0, 188, 0, 0.824);
+    cursor: pointer;
+}
+
+.popup {
+    display: none;
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    background-color: rgba(0, 0, 0, 0.636);
+    z-index: 9999;
+    justify-content: center;
+    align-items: center;
+}
+
+.popup-image {
+    max-width: 90%;
+    max-height: 90%;
+    border-radius: 8px;
+    box-shadow: 0 0 20px rgba(0, 0, 0, 0.5);
+}
+.submit {
+    width: 20vw;
+    height: 8vh;
+    border: none;
+    border-radius: 10px;
+    background-color: rgba(0, 188, 0, 0.7);
+    /* color: rgb(240, 222, 200); */
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    font-family: "Gill Sans", "Gill Sans MT", Calibri, "Trebuchet MS",
+        sans-serif;
+    font-size: 15px;
+    font-weight: 900;
+}
+
+.submit:hover {
+    box-shadow: 0px 0px 9px -1px rgba(78, 107, 78, 0.824);
+    background-color: rgba(0, 188, 0, 0.53);
+    cursor: pointer;
+}
