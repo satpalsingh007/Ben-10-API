@@ -7,9 +7,7 @@ const getAllData = async (req, res) => {
         console.log(error);
     }
 };
-const addData = (req, res) => {
-    res.send("hello");
-};
+
 const getSingleData = async (req, res) => {
     try {
         const name = req.params.name;
@@ -24,4 +22,4 @@ const getSingleData = async (req, res) => {
     }
 };
 
-module.exports = { getAllData, addData, getSingleData };
+module.exports = { getAllData, getSingleData };

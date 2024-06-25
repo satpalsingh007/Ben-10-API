@@ -4,7 +4,7 @@ const Model = require("../model/model");
 //     const data = ben10data[i];
 //     Model.create(data)
 //         .then((createdData) => {
-//             console.log("Data added successfully:", createdData);
+//             console.log("Data added successfully:");
 //         })
 //         .catch((error) => {
 //             console.error("Error adding data:", error);
