@@ -7,6 +7,17 @@ document.getElementById("popup").addEventListener("click", function (event) {
         this.style.display = "none";
     }
 });
+document.querySelector(".how").addEventListener("click", function () {
+    document.getElementById("popup-how").style.display = "flex";
+});
+
+document
+    .getElementById("popup-how")
+    .addEventListener("click", function (event) {
+        if (event.target === this) {
+            this.style.display = "none";
+        }
+    });
 document.getElementById("checkDatabase").addEventListener("click", function () {
     const inputName = document.getElementById("searchInput").value;
     if (inputName.trim() !== "") {
